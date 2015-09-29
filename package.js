@@ -12,15 +12,11 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.2.0.2');
-  api.use('ecmascript');
   api.addFiles('disconnected-server.js', 'server');
   api.addFiles('disconnected-client.js', 'client');
   api.export('Disconnected', ['client', 'server']);
 });
 
 Package.onTest(function(api) {
-  api.use('ecmascript');
-  api.use('tinytest');
   api.use('blindinglight:disconnected');
-  api.addFiles('disconnected-tests.js');
 });
