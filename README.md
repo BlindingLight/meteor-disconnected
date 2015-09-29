@@ -7,7 +7,7 @@ Runs a specified callback with custom data when a client disconnects (closes bro
 Client:    
 
 ```js
-# client/example.js
+// client/example.js
 
 Disconnected.assign(Session.get('someData'));
 ```
@@ -15,7 +15,7 @@ Disconnected.assign(Session.get('someData'));
 Server:    
 
 ```js
-# server/example.js
+// server/example.js
 
 Disconnected.onDisconnect = function(data) {
 	// do something with data
